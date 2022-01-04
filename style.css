@@ -1,0 +1,105 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+
+/*-------------- START SCROLLBAR --------------*/
+/* for mozilla scrollbar start */
+:root{
+  scrollbar-color: #3f4be3 #000;
+  scrollbar-width: thin;
+}
+/* for mozilla scrollbar end */
+::-webkit-scrollbar {
+  width: 16px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  border: 4px solid #000;
+  border-radius: 8px;
+  background: #3f4be3;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1f28a1;
+}
+/*-------------- END SCROLLBAR --------------*/
+
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.95);
+  --spacing: 350px;
+
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+main {
+  max-width: 100vw;
+  /* width: 100%; */
+  color: white;
+  z-index: 9;
+  position: absolute;
+  margin: 0px auto;
+  padding: 120px 0px;
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1, h2, h3, blockquote {
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+
+  header {
+    background: var(--dark-bg);
+    grid-column: 2 / span 5;
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin-bottom: var(--spacing);
+  }
+
+  section {
+    grid-column: 2 / 8;
+    padding: 1rem;
+    background: var(--dark-bg);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing);
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0;
+    grid-column: 2 / span 9;
+    margin-bottom: var(--spacing);
+  }
+
+  blockquote p {
+    color: black;
+    background-color: white;
+    font-size: 4rem;
+    display: inline;
+    line-height: 1;
+  }
+
+  .left {
+    grid-column: 6 / 12;
+  }
